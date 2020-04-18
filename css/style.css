@@ -15,7 +15,7 @@ body {
     position: relative;
 }
 
-.screen ul {
+.screen .slides {
     display: flex;
     color: darkblue;
     position: absolute;
@@ -23,7 +23,7 @@ body {
     top: 0;
 }
 
-li {
+.slides li {
     display: flex;
     list-style: none;
     background-color: blue;
@@ -62,4 +62,34 @@ li {
 
 .t-right {
     right: 0;
+}
+
+.points {
+    left: 50%;
+    bottom: 10px;
+    position: absolute;
+    justify-content: space-between;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+.points li{
+    list-style: none;
+    /* margin: 0 10px; */
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    background-color: darkred;
+    cursor: pointer;
+}
+.points li+li {
+    margin-left: 10px;
+}
+
+.points li.active {
+    border: 2px solid white;
+    width: 26px;
+    height: 26px;
+
+
 }
