@@ -1,13 +1,5 @@
 console.log($('#root'));
 
-// document.getElementById('myForm')
-// .addEventListener('submit',
-// function(event){
-//     event.preventDefault()
-//     console.log(event)
-// }
-// )
-
 let rootElem = $('#root');
 
 let width = rootElem.width();
@@ -23,21 +15,6 @@ $('.screen .slides li').height(height);
 let slideCnt = $('.screen ul li').length;
 
 $('.screen .slides').width(width * slideCnt);
-
-//////////////
-
-
-// function goRight () {
-//     let block = 1;
-//     indexMax = $('.screen').length;
-//     function slider() {
-//         block++;
-//         if(block > indexMax) {
-//             block = 1
-//         }
-//         $('.screen ul')
-//     }
-// }
 
 
 let page = 0;
@@ -79,17 +56,6 @@ $('.points li').on('click', function(){
     page = index;
     $('.screen .slides').animate({ 'left': `-${index* width}px` }, SPEED);
 });
-
-// $('.points li').addClass('active')
-//     $(this).css({
-//         backgroundColor: "yellow"
-//     });
-
-
-// $('.points li').removeClass('active')
-//     $(this).css({
-
-//     })
 
 
 
